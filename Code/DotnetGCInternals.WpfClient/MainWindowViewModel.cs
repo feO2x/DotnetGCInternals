@@ -119,8 +119,8 @@ namespace DotnetGCInternals.WpfClient
         private void AddListEntry(string entryName)
         {
             var newListEntry = new ListEntry(entryName);
-            newListEntry.Priority = SelectedList.Entries.Count;
-            SelectedList.Entries.Add(newListEntry);
+            newListEntry.Priority = SelectedListEntries.Count;
+            SelectedListEntries.Add(newListEntry);
         }
 
         private bool CanRemoveListEntry() => SelectedListEntry != null && !_isDialogOpen;
