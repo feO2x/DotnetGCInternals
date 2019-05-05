@@ -137,7 +137,7 @@ namespace DotnetGCInternals.WpfClient
 
         private void RemoveSelectedListEntry()
         {
-            SelectedList.Entries.Remove(SelectedListEntry);
+            SelectedListEntries.Remove(SelectedListEntry);
             SelectedListEntry = null;
         }
 
